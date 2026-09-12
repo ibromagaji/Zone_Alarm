@@ -18,14 +18,14 @@ When an object is detected:
 1. A local alarm sound is triggered.
 2. The detection frame (with bounding box) is sent to a Telegram chat via bot API.
 
-Two modes, two branches
+Three modes, two branches
 
 This repo ships two behaviors as separate branches:
 
 | Branch | Behavior |
 |---|---|
-| [`alarm`](https://github.com/ibromagaji/Zone_Alarm/tree/alarm) | Detects objects anywhere in frame. Any detection fires the alarm + Telegram alert. |
-| [`overlay.py`](https://github.com/ibromagaji/Zone_Alarm/tree/overlay.py) | Zone-based detection. Click 4 points on the video feed to draw a custom polygon zone — only detections inside that zone trigger the alarm. |
+| [`plane_security.py`](https://github.com/ibromagaji/Zone_Alarm/tree/alarm) | Detects objects anywhere in frame. Any detection fires the alarm + Telegram alert. |
+| [`Zone_Detection.py`](https://github.com/ibromagaji/Zone_Alarm/tree/overlay.py) | Zone-based detection. Click 4 points on the video feed to draw a custom polygon zone — only detections inside that zone trigger the alarm. |
 
 
 Features
